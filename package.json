@@ -16,10 +16,6 @@
     "health-check": "node services/healthcheck",
     "dependency-audit": "npx improved-yarn-audit --ignore-dev-deps"
   },  
-  "engines": {
-    "node": "18.x",
-    "yarn": "1.22.x"
-  },
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@formschema/native": "^2.0.0-beta.6",
@@ -75,7 +71,8 @@
     "vue-template-compiler": "^2.7.0"
   },
   "engines": {
-    "node": ">=16.0.0 <21.6.2"
+    "node": "18.x",
+    "yarn": "1.22.x"
   },
   "eslintConfig": {
     "root": true,
