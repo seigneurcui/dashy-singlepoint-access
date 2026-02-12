@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node server",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+    "vercel-install": "yarn install --ignore-engines",
+    "build": "your-build-command"
     "lint": "vue-cli-service lint",
     "pm2-start": "npx pm2 start server.js",
     "build-watch": "vue-cli-service build --watch --mode production",
@@ -16,7 +17,7 @@
     "health-check": "node services/healthcheck",
     "dependency-audit": "npx improved-yarn-audit --ignore-dev-deps"
   },  
-  "dependencies": {
+   "dependencies": {
     "@babel/core": "^7.0.0",
     "@formschema/native": "^2.0.0-beta.6",
     "@sentry/tracing": "^7.102.1",
