@@ -1,5 +1,5 @@
 {
-  "installCommand": "yarn install --ignore-engines",
+  "installCommand": "yarn vercel-install"
   "buildCommand": "yarn build",
   "framework": "vue"
 }
